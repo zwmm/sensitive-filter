@@ -34,13 +34,13 @@ trait SensitiveTrait{
             //mb_strlen 以UTF-8计算字符串长度
             $len = mb_strlen($words,'UTF-8');
             //把敏感词树复制到新的变量中
-            // 1$treeArr = &self::$sensitiveWordTree;
+            $treeArr = &self::$sensitiveWordTree;
 
             for ($i=0;$i<$len;$i++) {
                 $word = mb_substr($words,$i,1,'UTF-8');
                 //敏感词树结尾 记录状态为false
-                // 2$treeArr = &$treeArr[$word]??$treeArr = false;
-                    self::$sensitiveWordTree[$word]??self::$sensitiveWordTree[$word] = false;
+                $treeArr = &$treeArr[$word]??$treeArr = false;
+                //    self::$sensitiveWordTree[$word]??self::$sensitiveWordTree[$word] = false;
             }
         }
     }
