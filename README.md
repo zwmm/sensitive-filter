@@ -2,7 +2,9 @@
 DFA sensitive word filter
 
 ## 使用方法
-
+```angular2html
+composer require php-sensitive/sensitive-filter
+```
 
 ---
 ```
