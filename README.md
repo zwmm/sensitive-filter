@@ -9,8 +9,7 @@ composer require php-sensitive/sensitive-filter
 ---
 ```
 include_once "./vendor/autoload.php";
-
-#use \PhpSensitive\SensitiveFilter\Sensitive;
+use \PhpSensitive\SensitiveFilter\Sensitive;
 
 $filePath = __DIR__."/word.txt";
 $instance =Sensitive::getInstance($filePath);
