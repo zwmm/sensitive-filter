@@ -1,0 +1,21 @@
+{
+    "name": "php-sensitive/sensitive-filter",
+    "description": "sensitive word filter",
+    "type": "library",
+    "require": {
+        "php": "^7.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpSensitive\\SensitiveFilter\\": "./src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "famous",
+            "email": "1216855366@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
